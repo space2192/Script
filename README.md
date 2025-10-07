@@ -4,7 +4,7 @@
 -- Version: 3.2
 
 -- the stuff for preperation
-local key = "xq27xk31nt" -- put youre key in here
+local key = "xqwk182xz" -- put youre key in here
 
 local keylink = "https://discord.gg/fz4wubzx" -- put your key link here
 
@@ -12,7 +12,7 @@ local nameofthescript = "Elemental" --put your script name here. leave blank too
 
 local whoisitmadeby = "Sodium" -- put your name here
 
-local thenoteofthekey = "Join the Discord for the Key" --note you add here. leave blank to not have a note.
+local thenoteofthekey = "Get Key From Discord" --note you add here. leave blank to not have a note.
 
 
 -- Instances:
@@ -101,7 +101,7 @@ TextButton.MouseButton1Click:Connect(function()
 local Library = loadstring(game:HttpGet(repo .. 'Library.lua'))()
 local ThemeManager = loadstring(game:HttpGet(repo .. 'addons/ThemeManager.lua'))()
 local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
-local Window = Library:CreateWindow({ Title = '                         Space                     ', AutoShow = true, TabPadding = 15, MenuFadeTime = 0.2 })
+local Window = Library:CreateWindow({ Title = '                         Elemental                     ', AutoShow = true, TabPadding = 15, MenuFadeTime = 0.2 })
 local Tabs = { Main = Window:AddTab('Main'), Character = Window:AddTab('Character'), Visuals = Window:AddTab('Visuals'), Misc = Window:AddTab('Misc'), Players = Window:AddTab('Players'), ['UI Settings'] = Window:AddTab('UI Settings') }
 local GunMods = Tabs.Main:AddRightGroupbox('Gun Mods')
 local KillAura = Tabs.Main:AddRightGroupbox('Combat')
@@ -4795,7 +4795,6 @@ Library:OnUnload(function()
     print('Unloaded!')
     Library.Unloaded = true
 end)
- -- insert script on this line
 		ScreenGui:Destroy()
 	else
 		TextButton.Text = "Wrong Key!"
@@ -4822,7 +4821,7 @@ scriptname.TextScaled = true
 scriptname.TextSize = 14.000
 scriptname.TextWrapped = true
 
-madeby.Name = "Sodium"
+madeby.Name = "madeby"
 madeby.Parent = KeySystem
 madeby.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 madeby.BackgroundTransparency = 1.000
@@ -4831,7 +4830,7 @@ madeby.BorderSizePixel = 0
 madeby.Position = UDim2.new(0, 0, 0.368932039, 0)
 madeby.Size = UDim2.new(1, 0, 0.0809061453, 0)
 madeby.Font = Enum.Font.Gotham
-madeby.Text = "Made by: " Sodium
+madeby.Text = "Made by: " .. whoisitmadeby
 madeby.TextColor3 = Color3.fromRGB(255, 255, 255)
 madeby.TextScaled = true
 madeby.TextSize = 14.000
